@@ -21,7 +21,8 @@ import com.example.notesappmvvmandroomdatabase.databinding.FragmentHomeBinding
 import com.example.notesappmvvmandroomdatabase.model.Note
 import com.example.notesappmvvmandroomdatabase.model.NoteViewModel
 
-class HomeFragment : Fragment(R.layout.fragment_home),SearchView.OnQueryTextListener, MenuProvider {
+class HomeFragment : Fragment(R.layout.fragment_home),androidx.appcompat.widget.SearchView.OnQueryTextListener, MenuProvider,
+    SearchView.OnQueryTextListener {
 
     private var homeBinding: FragmentHomeBinding? = null
     private val binding get() = homeBinding!!
@@ -109,7 +110,7 @@ class HomeFragment : Fragment(R.layout.fragment_home),SearchView.OnQueryTextList
         menu.clear()
         menuInflater.inflate(R.menu.home_menu, menu)
 
-        val menuSearch = menu.findItem(R.id.searchMenu).actionView as SearchView
+        val menuSearch = menu.findItem(R.id.searchMenu).actionView as androidx.appcompat.widget.SearchView
         menuSearch.isSubmitButtonEnabled = false
         menuSearch.setOnQueryTextListener(this)
     }
