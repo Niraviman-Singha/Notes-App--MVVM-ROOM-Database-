@@ -21,7 +21,7 @@ import com.example.notesappmvvmandroomdatabase.databinding.FragmentHomeBinding
 import com.example.notesappmvvmandroomdatabase.model.Note
 import com.example.notesappmvvmandroomdatabase.model.NoteViewModel
 
-class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextListener, MenuProvider {
+class HomeFragment : Fragment(R.layout.fragment_home),SearchView.OnQueryTextListener, MenuProvider {
 
     private var homeBinding: FragmentHomeBinding? = null
     private val binding get() = homeBinding!!
