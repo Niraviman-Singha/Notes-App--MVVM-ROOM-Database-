@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.NotesAppMVVMAndROOMDatabase" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <style name="Base.Theme.NotesAppMVVMAndROOMDatabase" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/pink</item>
         <item name="colorPrimaryVariant">@color/pink</item>
@@ -14,5 +14,5 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.NotesAppMVVMAndROOMDatabase" parent="Base.Theme.NotesAppMVVMAndROOMDatabase" />
+    <style name="Theme.NotesAppMVVMAndROOMDatabase" parent="Theme.MaterialComponents.DayNight.DarkActionBar" />
 </resources>
